@@ -351,7 +351,7 @@ function twentyeleven_continue_reading_link() {
  * function tied to the excerpt_more filter hook.
  */
 function twentyeleven_auto_excerpt_more( $more ) {
-	return ' &hellip;' . twentyeleven_continue_reading_link();
+	return ' [...]' . twentyeleven_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' );
 
